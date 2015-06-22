@@ -1,6 +1,9 @@
+{% extends 'base.html' %}
 {% load staticfiles %}
-{% include 'base.html' %}
 
+{% block page-header %}
+	{{ block.super }}
+{% endblock page-header %}
 
 {% block content %}
 
