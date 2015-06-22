@@ -18,4 +18,8 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', "main.views.home", name="home"),
+    url(r'^about/$', 'main.views.about', name='about'),
+    url(r'^post/$', 'main.views.post', name='post'),
+    url(r'^contact/$', 'main.views.contact', name='contact'),
 ]
